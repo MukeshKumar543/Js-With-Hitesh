@@ -1,0 +1,25 @@
+// let myDate = new Date()
+// console.log(myDate.toDateString())
+// console.log(myDate.toLocaleDateString())
+// console.log(myDate.toJSON())
+// console.log(typeof myDate)
+
+//let myCreatedate = new Date(2023,0,23)
+//console.log(myCreatedate.toDateString())
+//let myCreatedate = new Date(2023,0,23,5,3)
+//console.log(myCreatedate.toLocaleDateString())
+
+// let myCreatedate = new Date("2023-01-22")
+ //let myCreatedate = new Date("01-14-2023")
+// console.log(myCreatedate.toLocaleDateString())
+
+// let myTimeStap = Date.now()
+// console.log(myTimeStap)
+//console.log(myCreatedate.getTime())
+
+//console.log(Math.floor(Date.now()/1000));
+
+let newDate = new Date()
+console.log(newDate)
+console.log(newDate.getDate())
+console.log(newDate.getDay())
