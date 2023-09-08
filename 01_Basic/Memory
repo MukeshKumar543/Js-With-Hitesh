@@ -1,0 +1,15 @@
+let myYoutubname = "Soanl"
+console.log(myYoutubname)
+let anotherName = myYoutubname
+anotherName = "Mukesh";
+console.log(anotherName)
+
+let user = {
+    email:"S@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = user
+userTwo.email = "M@gmail.com"
+console.log(user.email)
+console.log(userTwo.email)
