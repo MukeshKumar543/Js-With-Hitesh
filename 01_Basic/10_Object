@@ -1,0 +1,74 @@
+//singlton
+
+//object literals
+const mySys = Symbol("key1")
+const JsUser = {
+    Name:"Sonal",
+    Age: 25,
+    "full name" :"sonal Mishra",
+    [mySys]:"myykey1",
+    location:"Jaipur",
+    email:"Sonal@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays:["Monday","saturday"]
+}
+// console.log(JsUser.email)
+// console.log(JsUser["email"])
+// console.log(JsUser["full name"])
+// console.log(JsUser[mySys])
+
+JsUser.email="sonal@gmail.com";
+//Object.freeze(JsUser)
+JsUser.email ="sonalmishra.com"
+//console.log(JsUser);
+
+// JsUser.greeting = function(){
+//     console.log("Hello js user");
+// }
+
+// JsUser.greetingtwo = function(){
+//     console.log(`Hello js user${this.Name}`);
+// }
+// console.log(JsUser.greeting())
+// console.log(JsUser.greetingtwo())
+
+
+//const tinderUser = new Object()
+const tinderUser = {}
+
+ tinderUser.id ="123mueksh"
+tinderUser.Name = "sonal"
+ tinderUser.isActive = false
+ console.log(tinderUser)
+
+const regularUser ={
+    email:"sonal.com",
+    fullname:{
+        userfullname:{
+            firstname:"sonal",
+            lastname:"Mishra"
+        }
+    }
+}
+
+//console.log(regularUser.fullname.userfullname.firstname)
+
+const obj1 = {1: "a", 2:"b"}
+const obj2 = {3:"a",4:"b"}
+//const obj3 = {obj1,obj2}
+const obj3 = Object.assign(obj1,obj2)
+//console.log(obj3)
+
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+const course ={
+    coursename:".net fullstack",
+    price: "9900",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor} = course
+
+console.log(courseInstructor)
